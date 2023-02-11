@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,200;1,400;1,800&family=Sacramento&display=swap');
+
+/***************************************** Body *****************************************/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f3f9;
+}
+
+/***************************************** Admin Section *****************************************/
+.admin {
+    text-align: center;
+}
+
+.admin h1.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 50px 50px 0;
+}
+
+.admin .container {
+    padding: 50px;
+}
+
+.admin .container a{
+    text-decoration: none;
+    color: #434242;
+}
+
+.admin .container a:hover{
+    color: rgb(85, 85, 214);
+}
+
+.admin .container .card {
+    max-width: 500px;
+    border-bottom: 5px solid #d3d3d3;
+    background-color: #fff;
+    margin: 50px;
+    display: inline-block;
+}
+
+.admin .container .card:hover {
+    border-bottom: 5px solid #282a3a;
+    transform: translateY(5px);
+}
+
+.admin .container .card img {
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.admin .container .card .content {
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/***************************************** Title *****************************************/
+.page-title{
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: #282a3a;
+}
+
+/***************************************** Form *****************************************/
+.form * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form{
+    margin: 30px;
+    margin-top: 0;
+    display: flex;
+}
+
+.form .form-container p {
+    padding: 20px 0;
+    font-size: 13px;
+}
+
+.form .form-container {
+    position: relative;
+    width: 600px;
+    min-height: 450px;
+    border-radius: 6px;
+    margin: 50px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form .form-container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form .form-container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #282a3a;
+}
+
+.form .form-container form {
+    position: relative;
+    margin-top: 16px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.form .form-container form .form {
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.form .form-container form .form {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+.form .form-container form.secActive {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+.form .form-container form.secActive .form {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+.form .form-container form .fields {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form .form-container form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 30px 4px 0;
+}
+
+.form .form-container form .fields .input-field input[type = "file"]{
+    width: 300px;
+}
+
+.form .form-container form .fields .input-field input::file-selector-button{
+    border: none;
+    background-color: transparent;
+    padding-top: 12px;
+}
+
+.form .form-container .input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.form .form-container .input-field input,
+.form .form-container select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.form .form-container .input-field input :focus,
+.form .form-container .input-field select:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.form .form-container .input-field select,
+.form .form-container .input-field input[type="date"] {
+    color: #707070;
+}
+
+.form .form-container .input-field input[type="date"]:valid {
+    color: #333;
+}
+
+.form .form-container .input-field .description {
+    width: 300%;
+    height: 100px;
+    padding: 10px;
+    outline: none;
+}
+
+.form .form-container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #282a3a;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.form-container form .btnText {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media(max-width: 1000px){
+    .form{
+        margin: 30px;
+        display: block;
+    }
+}
+
+/***************************************** List *****************************************/
+.list {
+    margin: 30px 60px;
+}
+
+.list .card{
+    border: none;
+    border-bottom: 5px solid #d3d3d3;
+    margin: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.list .card:hover{
+    border-bottom: 5px solid #282a3a;
+    transform: translateY(5px);
+}
+
+.list .card img{
+    float: left;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.list .card .content{
+    padding: 20px;
+    float: right;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    height: 230px;
+    width: 250px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.list .card .content p span{
+    font-weight: 600;
+}

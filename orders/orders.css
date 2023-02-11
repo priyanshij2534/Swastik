@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,200;1,400;1,800&family=Sacramento&display=swap');
+
+/***************************************** Body *****************************************/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f3f9;
+}
+
+.products h1.title, .medicines h1.title, .appointment h1.title, .gym-registration h1.title, .lab-test h1.title{
+    margin: 30px 50px;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/***************************************** Container *****************************************/
+.container{
+    margin: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    min-height: 320px;
+    margin: 30px 50px;
+    display: inline-block;
+    width: 500px;
+}
+
+.container .content{
+    margin: 0 30px 0 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .content h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.container .content label{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.container .content .gap{
+    padding-bottom: 5px;
+}
+
+.container .content label span{
+    font-size: 15px;
+    color: #282a3a;
+    font-weight: 400;
+}
+
+.container .content label.sub-heading{
+    font-size: 17px;
+    color: #282a3a;
+    font-weight: 500;
+}
+
+.container .content .cancel-order{
+    background-color: #282a3a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container .content .cancel-order:hover{
+    transform: translateY(2px);
+}

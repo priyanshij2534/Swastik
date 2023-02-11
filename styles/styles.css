@@ -1,0 +1,221 @@
+/***************************************** HTML *****************************************/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d3d3d3; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #282a3a; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/***************************************** Navigation Bar *****************************************/
+.page-header {
+    height: 80px;
+}
+
+.page-header .uk-navbar-nav>li>a,
+.page-header .uk-icon-link,
+.page-header .uk-icon-link:hover {
+    color: #333;
+}
+
+.page-header .uk-navbar-nav>li>a {
+    padding: 0 25px;
+}
+
+.page-header .uk-navbar-nav>li>a:hover {
+    background: #f6f7f9;
+}
+
+.page-header .uk-navbar-dropdown-nav .uk-nav-header {
+    color: #7c2a8a;
+}
+
+.page-header [class*="uk-column-"]>li {
+    padding: 25px 0;
+}
+
+.page-header [class*="uk-column-"]>li:not(:last-child) {
+    border-right: 1px solid #e5e5e5;
+}
+
+.page-header [class*="uk-column-"] .uk-icon {
+    color: #c6c6c6;
+}
+
+.page-header .uk-container .uk-navbar-right a#cart-icon{
+    margin-right: 35px;
+}
+
+.page-header .uk-container .uk-navbar-right a#user-icon,
+.page-header .uk-container .uk-navbar-right a#logout-icon{
+    text-decoration: none;
+}
+
+.offcanvas .uk-nav-header {
+    color: rgba(246, 247, 249, 0.5);
+}
+
+.offcanvas .top-menu>li+li {
+    margin-top: 10px;
+}
+
+.offcanvas .sub-menu {
+    border-left: 1px solid #484848;
+}
+
+.offcanvas .sub-menu li {
+    padding-left: 30px;
+}
+
+.offcanvas .sub-menu li.uk-nav-header {
+    padding-left: 10px;
+}
+
+/***************************************** Footer *****************************************/
+.page-footer {
+    background: #eaeaea;
+    padding: 1.5rem 1.5rem 2rem;
+}
+
+.page-footer {
+    margin-top: auto;
+}
+
+.footer-heading {
+    font-size: 2.441rem;
+    line-height: 1.2;
+    margin: 0.5em 0 1em;
+}
+
+.about-info {
+    max-width: 20em;
+    margin-bottom: 2em;
+}
+
+.about-info a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.about-info a:hover,
+.about-info a[href]:focus-visible {
+    outline: 2px dashed orange;
+    outline-offset: 4px;
+}
+
+.about-info a[href]:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.about-info p {
+    margin: 0 0 0.75em;
+}
+
+.about-info>h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    margin-bottom: 0.75rem;
+}
+
+.social-links>h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    margin-bottom: 1.25rem;
+}
+
+.social-links>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-links a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    margin-right: 1rem;
+    border: 1px solid #445;
+    background: #334;
+    color: white;
+}
+
+.social-links li:last-child a {
+    margin-right: 0;
+}
+
+.social-links a:hover,
+.social-links a[href]:focus-visible {
+    outline: 1px dashed orange;
+    color: orange;
+    text-decoration: none;
+}
+
+.social-links a[href]:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    .footer-heading {
+        width: 100%;
+    }
+
+    .page-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        /* Reset rules declared on mobile */
+        text-align: left;
+        align-items: start;
+    }
+
+    .social-links>h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .footer-heading {
+        width: initial;
+        align-self: center;
+        margin-top: 0.4rem;
+    }
+
+    .page-footer {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .page-footer::before,
+    .page-footer::after {
+        content: '';
+        width: 2%;
+    }
+}

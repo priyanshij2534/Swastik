@@ -1,0 +1,1119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,200;1,400;1,800&family=Sacramento&display=swap');
+
+/***************************************** Body *****************************************/
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f3f9;
+}
+
+/***************************************** Banner *****************************************/
+.banner {
+    position: relative;
+}
+
+.banner img.banner-img {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner h3.title {
+    font-size: 1.3vw;
+    position: absolute;
+    top: 0%;
+    margin-left: 40%;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner .banner-slide {
+    display: none;
+    position: absolute;
+    margin-left: 40%;
+    top: 20%;
+}
+
+.banner .banner-slide.active {
+    display: block;
+}
+
+.banner .banner-slide .slide {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.banner .banner-slide .slide .content {
+    animation: slideContent .4s linear .6s backwards;
+}
+
+@keyframes slideContent {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+.banner .banner-slide .slide .content h1 {
+    font-size: 2.8vw;
+    color: #282a3a;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner p.banner-text {
+    font-size: 1.2vw;
+    font-weight: 300;
+    color: #282a3a;
+    position: absolute;
+    top: 30%;
+    margin-left: 40%;
+    margin-right: 30px;
+}
+
+.banner .button-container{
+    top: 55%;
+    position: absolute;
+    left: 40%;
+}
+
+.banner .online {
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 50px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    color: #f2f3f9;
+    background-color: #282a3a;
+    object-fit: cover;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 40px;
+}
+
+.banner .online:hover {
+    color: #282a3a;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.banner .online:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+@media (max-width: 1100px) {
+    .banner h3.title {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .banner .banner-slide {
+        top: 12%;
+    }
+
+    .banner .banner-slide .slide .content h1 {
+        font-size: 40px;
+    }
+
+    .banner p.banner-text {
+        top: 23%;
+        font-size: 17px;
+    }
+
+    .banner .button-container {
+        top: 35%;
+    }
+
+    .banner .online{
+        margin-bottom: 10px;
+        width: 270px;
+        font-size: 17px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner h3.title {
+        top: 0%;
+        font-size: 15px;
+        margin-left: 35%;
+        width: 60%;
+    }
+    
+    .banner .banner-slide {
+        margin-left: 35%;
+        top: 12%;
+    }
+    
+    .banner .banner-slide .slide .content h1 {
+        font-size: 30px;
+    }
+    
+    .banner p.banner-text {
+        margin-left: 35%;
+        top: 18%;
+        font-size: 15px;
+    }
+    
+    .banner .button-container {
+        left: 35%;
+        top: 30%;
+    }
+
+    .banner .online {
+        margin-bottom: 10px;
+        width: 270px;
+        font-size: 17px;
+        height: 55px;
+    }
+}
+
+/***************************************** Roadmap *****************************************/
+.roadmap .card-container {
+    position: absolute;
+    padding: 0;
+    top: 85%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    left: 15%;
+}
+
+.roadmap .card-container .card {
+    border-top: 5px solid #f2f3f9;
+    max-width: 250px;
+    text-align: center;
+    margin: 0 2vw;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    cursor: pointer;
+}
+
+.roadmap .card-container .card:hover {
+    border-top: 5px solid #282a3a;
+    transform: translateY(2px);
+}
+
+
+.roadmap .card-container .card img {
+    width: 70px;
+}
+
+@media (max-width: 1100px) {
+    .roadmap .card-container {
+        position: static;
+        display: block;
+    }
+
+    .roadmap .card-container .card {
+        border-top: 5px solid #f2f3f9;
+        min-width: 90%;
+        display: block;
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .roadmap .card-container .card img {
+        float: left;
+        margin-right: 30px;
+    }
+}
+
+/***************************************** Find Meds *****************************************/
+.find-test * {
+    margin: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.find-test {
+    width: 100%;
+    display: flex;
+    background-color: #f2f5f9;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+.find-test h1.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.find-test .imgBx {
+    position: relative;
+    width: 40%;
+    height: 700px;
+}
+
+.find-test .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.find-test .imgBx .background {
+    width: 100%;
+    height: 600px;
+    background: rgb(40, 42, 58);
+    background: linear-gradient(0deg, rgba(40, 42, 58, 1) 22%, rgba(70, 77, 140, 1) 92%, rgba(84, 88, 121, 1) 100%);
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.find-test .imgBx img {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 33vw;
+    height: 700px;
+    object-fit: cover;
+    left: 10%;
+}
+
+.find-test .contentBx {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.find-test .contentBx .title {
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.find-test .contentBx .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.find-test .contentBx .search-container .search-bar {
+    width: 600px;
+    height: 60px;
+    background-image: linear-gradient(#282a3a, #282a3a);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 8px 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.find-test .contentBx .search-container .search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    color: #f2f3f9;
+}
+
+.find-test .contentBx .search-container ::placeholder {
+    color: #f2f3f9;
+}
+
+.find-test .contentBx .search-container .search-bar button img {
+    width: 25px;
+}
+
+.find-test .contentBx .search-container .search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+.test-list{
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+}
+
+.find-test .no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.find-test .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.test-list{
+    z-index: 500;
+}
+
+.test-list div#show-list{
+    background-color: #ececf2;
+    position: absolute;
+    border: 1px solid #282a3a;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.test-list div#show-list a{
+    display: block;
+    padding: 15px 15px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media (max-width: 1100px){
+    .find-test {
+        padding-top: 50px;
+    }
+    
+    .find-test .contentBx .search-container .search-bar {
+        width: 500px;
+    }
+}
+
+@media (max-width: 800px){
+    .find-test .imgBx {
+        display: none;
+    }
+
+    .find-test .contentBx {
+        width: 100%;
+    }
+}
+
+/***************************************** Our Services *****************************************/
+.find-test .contentBx .our-services {
+    padding: 0 50px 50px 50px;
+}
+
+.find-test .contentBx .our-services .wrapper {
+    width: 100%;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card {
+    border-radius: 25px;
+    background-color: #fff;
+    max-width: 300px;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .image-content,
+.find-test .contentBx .our-services .wrapper .carousel .card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .image-content {
+    position: relative;
+    padding: 25px 0;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .image-content .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #282a3a;
+    border-radius: 25px 25px 0 25px;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .image-content .overlay::before,
+.find-test .contentBx .our-services .wrapper .carousel .card .image-content .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #282a3a;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .image-content .overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .image-content .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .image-content .card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #282a3a;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .card-content .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .card-content .description {
+    font-size: 14px;
+    color: #707070;
+    max-height: 100px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: justify;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .card-content .button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #282a3a;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.find-test .contentBx .our-services .wrapper .carousel .card .card-content .button:hover {
+    background: #f2f3f9;
+    color: #282a3a;
+}
+
+.find-test .owl-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.our-services .owl-dot {
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #282a3a !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.our-services .owl-dot.active,
+.our-services .owl-dot:hover {
+    background: #282a3a !important;
+}
+
+@media (max-width : 1000px) {
+    .our-services .title {
+        font-size: 6vw;
+    }
+}
+
+/***************************************** Workflow *****************************************/
+.workflow {
+    background-color: #282a3a;
+    padding: 70px 100px;
+}
+
+.workflow .header .column {
+    width: 45%;
+    float: left;
+}
+
+.workflow .header .column:first-child {
+    margin-right: 10%;
+}
+
+.workflow .header .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.workflow .header p {
+    font-size: 19px;
+    color: #f2f3f9;
+}
+
+.workflow .header h3 {
+    font-size: 19px;
+    color: #f2f3f9;
+}
+
+.workflow .header h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.workflow .main {
+    max-width: 1400px;
+    height: 350px;
+    padding: 0 15px;
+    margin: 60px auto;
+    box-sizing: border-box;
+}
+
+.workflow .content {
+    display: flex;
+    overflow-x: auto;
+}
+
+.workflow .content .card {
+    min-width: 200px;
+    min-height: 300px;
+    display: inline-block;
+    margin: 30px;
+    background-color: #f2f3f9;
+    padding: 10px 30px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 25%);
+    border-bottom: 15px solid #ededed;
+}
+
+.workflow .content .card:hover {
+    transform: translateY(3px);
+    cursor: pointer;
+    border-bottom: 15px solid #d3d3d3;
+}
+
+.workflow .content .card .card-number {
+    float: right;
+    font-size: 30px;
+    font-weight: 200;
+    color: #f0ffff;
+}
+
+.workflow .content .card .icon img {
+    margin: 25px 0;
+    height: 70px;
+    width: 70px;
+}
+
+.workflow .content .card .details h2 {
+    font-size: 22px;
+    color: #282a3a;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.workflow .content .card .details h3 {
+    font-size: 18px;
+    color: #282a3a;
+    margin: auto;
+}
+
+.workflow .footer {
+    text-align: center;
+}
+
+.workflow .footer p {
+    font-size: 19px;
+    color: #f2f3f9;
+    margin: auto;
+}
+
+.workflow .no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.workflow .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .workflow .header p {
+        font-size: 2vw;
+    }
+    
+    .workflow .header h3 {
+        font-size: 2vw;
+    }
+    
+    .workflow .header h2 {
+        font-size: 4vw;
+    }
+}
+
+/***************************************** Reviews *****************************************/
+.reviews * {
+    box-sizing: border-box
+}
+
+.reviews {
+    margin: 0;
+    background-color: #f2f3f9;
+}
+
+.reviews .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.reviews .column-1 {
+    width: 65%;
+    float: left;
+    padding: 100px 5% 0 5%;
+}
+
+.reviews .column-2 {
+    width: 35%;
+    float: left;
+    position: relative;
+}
+
+.reviews .column-11 {
+    width: 10%;
+    float: left;
+}
+
+.reviews .column-12 {
+    width: 90%;
+    float: left;
+}
+
+.reviews .column-1 h1 {
+    color: #282a3a;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reviews .column-1 .column-11 h1 {
+    padding-right: 30px;
+    color: #ff6e31;
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reviews .column-1 .column-12 .content {
+    position: relative;
+    max-width: 750px;
+    padding-bottom: 100px;
+}
+
+.reviews .column-1 .column-12 .content .review-container .review-text {
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reviews .column-1 .column-12 .sliders {
+    left: 50%;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.reviews .column-2 .background {
+    width: 100%;
+    height: 600px;
+    background: rgb(249, 249, 249);
+    background: linear-gradient(0deg, rgba(249, 249, 249, 1) 75%, rgba(40, 42, 58, 1) 75%);
+    z-index: 1;
+}
+
+.reviews .column-2 img {
+    left: 5%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 30vw;
+    height: 500px;
+    object-fit: cover;
+    clip-path: polygon(100% 0, 100% 90%, 51% 100%, 0 90%, 0 0);
+}
+
+@media (max-width: 1100px){
+    .reviews {
+        padding-bottom: 50px;
+    }
+
+    .reviews .column-1{
+        width: 100%;
+    }
+
+    .reviews .column-2{
+        width: 0%;
+    }
+
+    .reviews .column-1 h1 {
+        font-size: 35px;
+    }
+    
+    .reviews .column-1 .column-11 h1 {
+        font-size: 90px;
+    }
+
+    .reviews .column-1 .column-12 .content .review-container .review-text {
+        font-size: 20px;
+    }
+
+    .reviews .column-2 .background {
+        height: 0;
+    }
+}
+
+/***************************************** Visiting Form *****************************************/
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: none;
+}
+
+.popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #282a3a;
+    z-index: 2000;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    background: #282a3a;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 5000;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.test-form * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.test-form .form-container p {
+    padding: 20px 0;
+    font-size: 13px;
+}
+
+.test-form .form-container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.test-form .form-container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.test-form .form-container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #282a3a;
+}
+
+.test-form .form-container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.test-form .form-container form .form {
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.test-form .form-container form .form {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+.test-form .form-container form.secActive {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+.test-form .form-container form.secActive .form {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+.test-form .form-container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.test-form .form-container form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.test-form .form-container .input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.test-form .form-container .input-field input,
+.test-form .form-container select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.test-form .form-container .input-field input :focus,
+.test-form .form-container .input-field select:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.test-form .form-container .input-field select,
+.test-form .form-container .input-field input[type="date"] {
+    color: #707070;
+}
+
+.test-form .form-container .input-field input[type="date"]:valid {
+    color: #333;
+}
+
+.test-form .form-container form button,
+.backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #282a3a;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.form-container form .btnText {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form button i,
+form .backBtn i {
+    margin: 0 6px;
+}
+
+form .backBtn i {
+    transform: rotate(180deg);
+}
+
+form .buttons {
+    display: flex;
+    align-items: center;
+}
+
+form .buttons button,
+.backBtn {
+    margin-right: 14px;
+}
+
+@media (max-width: 750px) {
+    .form-container form {
+        overflow-y: scroll;
+    }
+
+    .form-container form::-webkit-scrollbar {
+        display: none;
+    }
+
+    form .fields .input-field {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field {
+        width: 100%;
+    }
+}
+
+/***************************************** Medicine Details *****************************************/
+.test-details {
+    margin: 50px 100px;
+}
+
+.test-details .details-container{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.test-details .test-image video{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    float: left;
+    border-radius: 5px;
+}
+
+.test-details .test-content{
+    margin-left: 500px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.test-details .test-content label{
+    font-size: 13px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.test-details .test-content label span{
+    font-size: 17px;
+    color: #000;
+    font-weight: 400;
+}
+
+.test-details .gap{
+    padding-bottom: 5px;
+}
+
+.test-details .test-content button.cart{
+    background-color: #282a3a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.test-details .test-content button.cart:hover{
+    transform: translateY(5px);
+}
+
+.test-details .test-content form{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.test-details .test-text h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.test-details .test-text h4{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.test-details .test-text p{
+    font-size: 15px;
+}
+
+@media(max-width: 1100px){
+    .test-details {
+        margin: 50px;
+    }
+
+    .test-details .test-content{
+        margin-left: 400px;
+    }
+
+}
+
+@media(max-width: 800px){
+    .test-details {
+        margin: 30px;
+    }
+
+    .test-details .test-image img{
+        float: none;
+    }
+
+    .test-details .test-content{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    .test-details .test-text h3{
+        font-size: 23px;
+    }
+
+    .test-details .test-text p{
+        font-size: 13px;
+    }
+}

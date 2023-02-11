@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,200;1,400;1,800&family=Sacramento&display=swap');
+
+/***************************************** Body *****************************************/
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/***************************************** Banner *****************************************/
+.banner {
+    position: relative;
+}
+
+.banner img {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    margin: 0 50px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner .banner-slide {
+    display: none;
+    position: absolute;
+    margin: 0 50px;
+    top: 30%;
+}
+
+.banner .banner-slide.active {
+    display: block;
+}
+
+.banner .banner-slide .slide {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.banner .banner-slide .slide .content {
+    animation: slideContent .4s linear .6s backwards;
+}
+
+@keyframes slideContent {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+.banner .banner-slide .slide .content h3 {
+    font-size: 35px;
+    color: #282a3a;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #282a3a;
+    position: absolute;
+    top: 45%;
+    margin: 0 50px;
+}
+
+@media (max-width: 1000px) {
+    .banner h1 {
+        font-size: 6vw;
+        top: 5%;
+    }
+
+    .banner .banner-slide {
+        margin-right: 0;
+        top: 12vw;
+    }
+
+    .banner .banner-slide .slide .content h3 {
+        font-size: 4vw;
+    }
+
+    .banner p {
+        font-size: 2vw;
+        top: 20vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .banner h1 {
+        font-size: 35px;
+        margin-left: 60px;
+    }
+
+    .banner .banner-slide {
+        margin-left: 60px;
+        top: 15%;
+    }
+
+    .banner .banner-slide .slide .content h3 {
+        font-size: 25px;
+    }
+
+    .banner p {
+        font-size: 15px;
+        margin-left: 60px;
+        top: 28%;
+    }
+}
+
+/***************************************** Facilities *****************************************/
+.facilities .card-container {
+    position: absolute;
+    display: block;
+    padding: 0;
+    text-align: center;
+    top: 570px;
+    width: 100%;
+    text-align: center;
+}
+
+.facilities .card-container .card {
+    border-top: 5px solid #f2f3f9;
+    max-width: 300px;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 2vw;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    cursor: pointer;
+}
+
+.facilities .card-container .card:hover {
+    border-top: 5px solid #282a3a;
+    transform: translateY(2px);
+    text-decoration: none;
+}
+
+
+.facilities .card-container .card img {
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+@media (max-width: 1100px) {
+    .facilities .card-container {
+        position: static;
+    }
+
+    .facilities .card-container .card {
+        border-top: 5px solid #f2f3f9;
+        min-width: 90%;
+        display: block;
+        padding: 30px;
+        margin: 30px auto;
+    }
+}
+
+/***************************************** About Hospital *****************************************/
+.about-hospital * {
+    margin: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-hospital {
+    width: 100%;
+    display: flex;
+    background-color: #f2f5f9;
+    padding-top: 200px;
+}
+
+.about-hospital .imgBx {
+    position: relative;
+    width: 30%;
+    height: 400px;
+}
+
+.about-hospital .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-hospital .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 400px;
+    object-fit: cover;
+    left: 10%;
+}
+
+.about-hospital .contentBx {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.about-hospital .contentBx .title {
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: #3f414c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.about-hospital .contentBx h2.title {
+    text-align: left;
+    padding-bottom: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #47484b;
+}
+
+.about-hospital .contentBx span {
+    color: #282a3a;
+}
+
+.about-hospital p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+@media (max-width: 1100px) {
+    .about-hospital {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about-hospital .imgBx {
+        display: none;
+    }
+
+    .about-hospital .contentBx {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/***************************************** Our Doctors *****************************************/
+.doctors {
+    background-color: #f2f3f9;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.doctors .title {
+    padding-top: 80px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.doctors span {
+    font-weight: 500;
+}
+
+.doctors .details {
+    max-width: 1400px;
+    margin: 20px auto 60px;
+    box-sizing: border-box;
+}
+
+.doctors .card-container {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.doctors .no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.doctors .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.doctors .card-container .card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 300px;
+    margin: 30px 40px;
+    background-color: #fff;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 5px solid #d3d3d3;
+}
+
+.doctors .card-container .card:hover {
+    border-bottom: 5px solid #282a3a;
+    transform: translateY(3px);
+}
+
+.doctors .card-container .card .doctor-profile img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.doctors .card-container .card .content {
+    text-align: center;
+}
+
+.doctors .card-container .card .content li {
+    list-style: none;
+    padding: 3px;
+}
+
+.doctors .card-container .card .content .name {
+    font-weight: 600;
+}
+
+.doctors .view-all {
+    text-align: center;
+    border-radius: 3px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px 50px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    margin: 0 20px;
+    border: 2px solid #282a3a;
+    color: #282a3a;
+    background-color: #f1f1f1;
+    left: 140px;
+    object-fit: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.doctors .view-all:hover {
+    color: #fff;
+    background-color: #282a3a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+    .doctors .title {
+        padding-top: 90px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .doctors .card-container .card {
+        min-width: 35vw;
+    }
+
+    .doctors .card-container .card .content {
+        height: 130px;
+    }
+
+    .doctors .card-container .card .doctor-profile img {
+        height: 30vw;
+        width: 35vw;
+        object-fit: cover;
+    }
+
+    .doctors .card-container .card .content {
+        text-align: center;
+        background-color: #fff;
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .doctors .card-container .card .doctor-profile img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    .doctors .card-container .card {
+        min-width: 45vw;
+    }
+
+    .doctors .card-container .card .doctor-profile img {
+        height: 30vw;
+        width: 45vw;
+        object-fit: cover;
+    }
+}
+
+/***************************************** Surgeries *****************************************/
+.surgeries {
+    background-color: #282a3a;
+    padding: 90px;
+    text-align: center;
+}
+
+.surgeries .title {
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.surgeries .container .surgery-details {
+    max-width: 350px;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #f2f3f9;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px 10px;
+    cursor: pointer;
+}
+
+.surgeries .container .surgery-image {
+    height: 110px;
+    width: 110px;
+    object-fit: cover;
+    float: left;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.surgeries .container .details h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.surgeries .container .details p {
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    font: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.surgeries .surgery-button button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 10px 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    cursor: pointer;
+}
+
+.surgeries .surgery-button button:hover {
+    transform: translateY(5px);
+}
+
+@media (max-width: 1000px) {
+    .surgeries {
+        padding: 45px 10%;
+    }
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,200;1,400;1,800&family=Sacramento&display=swap');
+
+/***************************************** Body *****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f3f9;
+}
+
+/***************************************** Find Meds *****************************************/
+.find-item * {
+    margin: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.find-item {
+    width: 100%;
+    display: flex;
+    background-color: #f2f5f9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.find-item h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.find-item .contentBx {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.find-item .contentBx .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.find-item .contentBx .search-container .search-bar {
+    width: 600px;
+    height: 60px;
+    background-image: linear-gradient(#282a3a, #282a3a);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 8px 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.find-item .contentBx .search-container .search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    color: #f2f3f9;
+}
+
+.find-item .contentBx .search-container ::placeholder {
+    color: #f2f3f9;
+}
+
+.find-item .contentBx .search-container .search-bar button img {
+    width: 25px;
+}
+
+.find-item .contentBx .search-container .search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+.searched-list{
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+}
+
+.find-item .no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.find-item .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.searched-list{
+    z-index: 500;
+}
+
+.searched-list div#show-list{
+    background-color: #ececf2;
+    position: absolute;
+    border: 1px solid #282a3a;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.searched-list div#show-list a{
+    display: block;
+    padding: 15px 15px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.searched-list .no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.searched-list .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 1100px){
+    .find-item {
+        padding-top: 50px;
+    }
+    
+    .find-item .contentBx .search-container .search-bar {
+        width: 500px;
+    }
+}
+
+@media (max-width: 800px){
+    .find-item .contentBx {
+        width: 100%;
+    }
+}
+
+/***************************************** All Items *****************************************/
+.items{
+    column-count: 3;
+    margin: 50px 100px;
+    column-gap: 100px;
+}
+
+.items p.title{
+    font-weight: 700;
+    color: #282a3a;
+}
+
+.items button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: block;
+    text-align: left;
+}
+
+.items button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

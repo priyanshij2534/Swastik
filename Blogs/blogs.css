@@ -1,0 +1,256 @@
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+/*                                                     Top-Slider */
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  position: relative;
+  padding-top: 5%;
+}
+
+.blog-top-slider-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 8px 50px;
+  position: absolute;
+  bottom: 8px;
+  width: 65%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #111111;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+
+/*                                                          Fitness & Exercise */
+
+.Fitness-Exercise-heading {
+  padding-top: 4%;
+  font-weight: 600;
+}
+
+.Fitness-Exercise-main {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Fitness-Exercise-left {
+  width: 71%;
+}
+
+.Fitness-Exercise-right {
+  width: 27%;
+}
+
+.Fitness-Exercise-links {
+  font-size: 1.6vw;
+  font-weight: 500;
+  color: #5A5A5A;
+}
+
+a.Fitness-Exercise-links:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.Fitness-Exercise-img1 {
+  padding-bottom: 1%;
+}
+
+.Fitness-Exercise-img2 {
+  padding-bottom: 2%;
+}
+
+.Fitness-Exercise-img3 {
+  padding: 10% 2% 0;
+}
+
+
+/*                                                          Home Remedies */
+
+.Home-Remedies-heading {
+  padding-top: 4%;
+  font-weight: 600;
+}
+
+.Home-Remedies-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Home-Remedies-card {
+  margin-bottom: 2em;
+}
+
+.Home-Remedies-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Home-Remedies-links {
+  font-size: 1.6vw;
+  font-weight: 500;
+  color: #5A5A5A;
+}
+
+a.Home-Remedies-links:hover {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 30em) {
+  .Home-Remedies-card {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .Home-Remedies-card {
+    flex: 0 1 calc(33.33% - 1em);
+  }
+}
+
+/*                                                          Diseases */
+
+.Diseases-heading {
+  padding-top: 4%;
+  font-weight: 600;
+}
+
+.Diseases-main {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Diseases-left {
+  width: 24%;
+}
+
+.Diseases-mid {
+  width: 24%;
+}
+
+.Diseases-right {
+  width: 48%;
+}
+
+.Diseases-links {
+  font-size: 1.6vw;
+  font-weight: 500;
+  color: #5A5A5A;
+}
+
+a.Diseases-links:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.Diseases-img1,.Diseases-img3 {
+  padding-bottom: 2%;
+}
+
+.Diseases-img2,.Diseases-img4 {
+  padding: 10% 2% 0;
+}
+
+.Diseases-img5 {
+  padding: 1%;
+}
